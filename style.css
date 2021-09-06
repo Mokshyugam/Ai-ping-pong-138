@@ -12,3 +12,16 @@
     border: 1px solid white;
 }
 
+#replay{
+    border-radius: 10px;
+}
+
+.copy_right_footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: aquamarine;
+    color: rgb(99, 11, 11);
+    text-align: center;
+    line-height: 3;
+}
