@@ -169,7 +169,7 @@ function setup() {
 	canvas.parent('canvas');
 	video = createCapture(VIDEO);
 	video.size(800, 400);
-  video.hide();
+  video.hide;
 	posenet = ml5.poseNet(video, modelloaded);
 	posenet.on('pose', gotposes);
 }
