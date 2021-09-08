@@ -162,3 +162,27 @@ function paddleInCanvas(){
     mouseY =0;
   }  
 }
+
+
+function setup() {
+	canvas = createCanvas(1240,336);
+	canvas.parent('canvas');
+	video = createCapture(VIDEO);
+	video.size(800, 400);
+  video.hide();
+	posenet = ml5.poseNet(video, modelloaded);
+	posenet.on('pose', gotposes);
+}
+
+function modelloaded()
+{
+	console.log("Modelloaded");
+}
+
+function gotposes(results){
+	if(results.length > 0){
+		console.log(results);
+		nosex = results[0].pose.nose.x;
+		nosey = results[0].pose.nose.y;
+	}
+}
