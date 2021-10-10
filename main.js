@@ -1,3 +1,5 @@
+wrightwristX = "";
+wrightwristY = "";
 
 /*created by prashant shukla */
 
